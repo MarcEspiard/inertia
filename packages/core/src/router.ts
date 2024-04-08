@@ -272,6 +272,7 @@ export class Router {
       onSuccess = () => {},
       onError = () => {},
       queryStringArrayFormat = 'brackets',
+      hideProgressBar = false,
     }: VisitOptions = {},
   ): void {
     let url = typeof href === 'string' ? hrefToUrl(href) : href
@@ -298,6 +299,7 @@ export class Router {
       errorBag,
       forceFormData,
       queryStringArrayFormat,
+      hideProgressBar,
       cancelled: false,
       completed: false,
       interrupted: false,
